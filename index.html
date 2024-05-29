@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o Número</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="window" id="inputWindow">
+        <div class="title-bar">
+            <div class="title-bar-text">Windows XP</div>
+        </div>
+        <div class="window-body">
+            <p>Este sistema consegue descobrir o número que você está pensando. Não acredita? Digite um número de 1 a 10</p>
+            <input type="number" id="userNumber" min="1" max="10">
+            <button id="sendButton">Enviar</button>
+        </div>
+    </div>
+    
+    <div class="window hidden" id="loadingWindow">
+        <div class="title-bar">
+            <div class="title-bar-text">Windows XP</div>
+        </div>
+        <div class="window-body">
+            <p id="loadingMessage">Analisando seu cérebro</p>
+            <div class="progress-bar">
+                <div class="progress-bar-inner" id="progressBar"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="window hidden" id="resultWindow">
+        <div class="title-bar">
+            <div class="title-bar-text">Windows XP</div>
+        </div>
+        <div class="window-body">
+            <p id="resultMessage">Você pensou no número </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
